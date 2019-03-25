@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>EDUCA : Education Website</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" id="main-css" 
+		href="style.css" type="text/css" media="all"/>
+		
+		<link rel="stylesheet" id="nav-css"  
+		href="./css/nevigation.css" type="text/css" media="all"/>
+		<link rel="stylesheet" id="flex-css"
+		href="./css/flexslider.css" type="text/css" media="screen">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="./js/jquery.flexslider-min.js"></script>
+		
+	</head>
+	<body>
+		<!--ส่วนหัวของเว็บ-->
+		<div class="top-head">
+			<div class="top-Mercury Ville ชั้น 4 ลุมพินี ปทุมวันcontent">
+				<div class="top-nav"><!--เริ่มเมนู-->
+					<div id="nav" role="navigation">
+						<a href="#nav" title="Show navigation">Show navigation</a>
+						<a href="#" title="Hide navigation">Hide navigation</a>
+						<ul class="clearfix">
+							<li><a href="?home">&nbsp; &nbsp; หน้าหลัก |&nbsp; </a></li>
+							<li><a href="?blog">&nbsp;ข้อมูลสาขา |&nbsp; </a></li>
+							<li><a href="?work">&nbsp;การรับเข้า |&nbsp; </a></li>
+							<li><a href="?work">&nbsp;สาระความรู้ |&nbsp; </a></li>
+							<li><a href="?about">&nbsp;ข้อมูลศิษย์เก่า |&nbsp; </a></li>
+							<li><a href="?about">&nbsp;การติดต่อ |&nbsp; </a></li>
+						</ul>
+					</div>
+				</div><!--สิ้นสุดเมนู-->
+				<div class="top-search">
+					<div class="searchbox">
+						<form id="form1">
+							<input  type ="input" id="search" />
+							<input  type ="submit"  id="submit"  value="Go"/>
+						</form>
+					</div>
+				</div><!--ค้นหา-->
+			</div>
+		</div> 
+		<!--สิ้นสุดส่วนหัว-->
+		<div class="container">
+			<div class="header">
+				<div class="box-horizontal">
+					<div class="head-logo">
+						<img src="./images/logo.png" alt="educa website logo"/>
+					</div>
+					<div class="head-nav">
+						<ul id="hnav-horizontal">
+							<li><a href="#">หน้าหลัก</a></li>
+							<li><a href="#"><span>Blog</span></a>
+								<ul>
+									<li><a href="#">Articles 1</a></li>
+									<li><a href="#"><span>incididunt ut </span></a>
+										<ul>
+											<li><a href="#">Lorem ipsum dolor</a></li>
+											<li><a href="#">consectetur adipisicing</a></li>
+											<li><a href="#">eiusmod tempor </a></li>
+										</ul>
+									</li>
+									<li><a href="#">Articles 3</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><span>Products</span></a>
+								<ul>
+								  <li><a href="#">Products 1</a></li>
+								  <li><a href="#">Products 2</a></li>
+								  <li><a href="#">Products 3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li><a href="#"><img src="./images/slider1.jpg" width="1024" height="430" /></a></li>
+							<li><a href="#"><img src="./images/slider2.jpg" width="1024" height="430" /></a></li>
+							<li><a href="#"><img src="./images/slider3.jpg" width="1024" height="430" /></a></li>
+							<li><a href="#"><img src="./images/slider4.jpg" width="1024" height="430" /></a></li>
+							<li><a href="#"><img src="./images/slider5.jpg" width="1024" height="430" /></a></li>
+							<li><a href="#"><img src="./images/slider6.jpg" width="1024" height="430" /></a></li>
+						</ul>
+						<script type="text/javascript">
+							$(window).load(function() {
+								$('.flexslider').flexslider({
+									animation: "slide",
+									slideshowSpeed: 7000,
+									directionNav: true, 	
+									controlNav:true,						
+									slideToStart: 0
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">FOOTER CONTENT</div>
+	</body>
+</html>
